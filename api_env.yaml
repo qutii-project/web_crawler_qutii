@@ -1,0 +1,55 @@
+# Config file for API peamters
+# Template
+#
+#publisher name:
+#   api_required_boolean (paramter True if api key is required else False)
+#   api_key: (holds api key if api_required_boolean paramter is True)
+#   base_url: this is required paramter of the base url of publisher API (from documentation)
+#   result_format: the format in which data is expected 
+#   solr: set to True of API query is build using solr (refer to online documentation of solr)
+
+
+env: dev
+project_name: API crawler
+
+springernature:
+  pub_name: springernature
+  api_required_boolean: True
+  api_key: xxxxxxxxx
+  collection : openaccess
+  result_format : json
+  base_url : http://api.springernature.com/
+  p: 2
+
+gatesopen:
+  pub_name: gatesopen
+  api_required_boolean: False
+  base_url: https://gatesopenresearch.org/extapi/search?
+  wt: json #default
+  q: R_ABS #full text search
+  solr: True
+
+plos:
+  pub_name: plos
+  api_required_boolean: False
+  base_url: http://api.plos.org/search?q=
+  wt: json #default
+  q: abstract #full text search
+  solr: True
+
+eu_open_research:
+  pub_name: eu_open_research
+  api_required_boolean: False
+  base_url: https://open-research-europe.ec.europa.eu/extapi/search?q=
+  wt: json
+  q: R_ABS
+  solr: True
+
+elsevier:
+  pub_name: elsevier
+  api_required_boolean: True
+  api_key: 11b1bbf1614d7d2af8977288af1c17d2
+  base_url: http://api.elsevier.com/content/search/scopus?query=
+  wt: json
+  q: R_ABS
+  solr: True
