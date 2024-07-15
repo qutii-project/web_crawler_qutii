@@ -48,7 +48,7 @@ eu_open_research:
 elsevier:
   pub_name: elsevier
   api_required_boolean: True
-  api_key: 11b1bbf1614d7d2af8977288af1c17d2
+  api_key: xxxxxxxxxxxxxx
   base_url: http://api.elsevier.com/content/search/scopus?query=
   wt: json
   q: R_ABS
