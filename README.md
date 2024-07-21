@@ -22,14 +22,14 @@ Directory which contains the utility scripts to handle postgres connections and 
 
 - api_env.yaml
  Config file for API peamters
-# Template
-#
-#publisher name:
-#   api_required_boolean (paramter True if api key is required else False)
-#   api_key: (holds api key if api_required_boolean paramter is True)
-#   base_url: this is required paramter of the base url of publisher API (from documentation)
-#   result_format: the format in which data is expected 
-#   solr: set to True of API query is build using solr (refer to online documentation of solr)
+Template: 
+
+publisher name:
+api_required_boolean (paramter True if api key is required else False)
+api_key: (holds api key if api_required_boolean paramter is True)
+base_url: this is required paramter of the base url of publisher API (from documentation)
+result_format: the format in which data is expected 
+solr: set to True of API query is build using solr (refer to online documentation of solr)
 
 - database.ini
   to maintain postgres connection details
